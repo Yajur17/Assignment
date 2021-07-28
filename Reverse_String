@@ -1,0 +1,38 @@
+#include <string.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+int
+main ()
+{
+  char str[100];
+
+  // getting string
+  fgets (str, sizeof (str), stdin);
+
+
+  reversestring (str);
+
+}
+
+// function to reverse the string
+void reversestring (char str[])
+{
+  int i, j, count = 0;
+  char a[100];
+
+// calculating string length 
+  while (str[count] != '\0')
+    {
+      count++;
+    }
+  j = count - 1;
+ // revsering string
+  for (i = 0; i < count; i++)
+    {
+      a[i] = str[j];
+      j--;
+    }
+
+  printf ("%s", a);
+}
