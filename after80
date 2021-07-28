@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<string.h>
+
+int main ()
+{
+  int i, count = 0;
+  char str[1000];
+
+  //scanning string
+  fgets (str, sizeof (str), stdin);
+
+  //calculating string length
+  while (str[count] != '\0')
+    {
+      count++;
+    }
+
+  //printing characters after a specific place
+  for (i = 80; i < count; i++)
+    {
+      printf ("%c", str[i]);
+    }
+}
