@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main(){
+     int i,n,v=0, c=0;
+     char string[100];
+     
+     fgets(string, sizeof string, stdin);
+     
+     n=strlen(string);
+     
+     for(i=0;i<n;i++){
+          if(string[i]=='a' || string[i]=='e' || string[i]=='i'|| string[i]=='o' || string[i]=='u'){
+               v++;
+          }
+          else if(string[i]=='A' || string[i]=='E' || string[i]=='I'|| string[i]=='O' || string[i]=='U'){
+               v++;
+          }
+          else{
+              c++;
+          }
+     }
+     
+     printf("Vowel=%d and Consonant=%d", v,c);
+}
