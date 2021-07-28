@@ -1,0 +1,38 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int number=10;
+    int precision;
+    float ans;
+    float i=1;
+    
+    double a=0.00001;
+    
+    float m=number;  
+    while(m-i>a){
+        
+        m=(m+i)/2;
+        i=number/m;
+        
+    }
+    
+    printf("%.4f",m);
+ 
+}
+
+
+int main()
+{
+    float i;
+    int n=10;
+    int a=3;
+    
+    
+    for(i=0.001;i*i<n;i=i+0.001);
+    
+    printf("%.4f", i);
+
+    return 0;
+}
